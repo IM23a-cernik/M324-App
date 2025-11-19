@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+    tools {nodejs "node"}
+    stages {
+        stage('Cloning Repo') {
+            steps {
+                script {
+                    git branch: "main",
+                    url: "https://github.com/IM23a-cernik/M324-App.git"
+                }
+            }
+        }
+        stage("install jest-cli") {
+            steps {
+                sh "npm install jest-cli -g"
+            }
+        }
+        stage("install dependencies") {
+            steps {
+                sh "npm install"
+            }
+        }
+        stage("test") {
+            steps {
+                sh "npm test"
+            }
+        }
+    }
+}
