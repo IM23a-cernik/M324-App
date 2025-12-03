@@ -1,9 +1,10 @@
 {
   "name": "trafficlight",
   "version": "1.0.0",
-  "description": "M324 Devops",
+  "description": "JavaScript Bootcamp",
   "scripts": {
-    "test": "jest"
+    "index": "node app.js",
+    "test": "./node_modules/.bin/jest"
   },
   "keywords": [
     "m324",
@@ -12,7 +13,6 @@
   "author": "daniel.garavaldi@bzz.ch",
   "license": "ISC",
   "dependencies": {
-    "jest": "^29.7.0",
-    "supertest": "^6.3.3"
+    "jest": "^29.7.0"
   }
 }

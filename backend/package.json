@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "M324 Devops",
   "scripts": {
-    "test": "jest"
+    "server": "nodemon index.js"
   },
   "keywords": [
     "m324",
@@ -12,7 +12,10 @@
   "author": "daniel.garavaldi@bzz.ch",
   "license": "ISC",
   "dependencies": {
-    "jest": "^29.7.0",
-    "supertest": "^6.3.3"
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.0.1"
   }
 }
